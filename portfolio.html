@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Modern Portfolio - Fixed Mobile Menu</title>
+    <!-- Three.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
     <!-- Three.js Background -->
     <div id="threejs-container"></div>
+    
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container nav-container">
@@ -43,6 +48,7 @@
             </button>
         </div>
     </nav>
+
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
@@ -79,7 +85,7 @@
                 </div>
                 <div class="hero-image">
                     <div class="gradient-border">
-                        <img src="../images//raman.HEIC" alt="Developer avatar with futuristic design elements">
+                        <img src="./images/raman.jpg" alt="Raman Kumar - Full Stack Developer">
                     </div>
                 </div>
             </div>
@@ -91,7 +97,6 @@
         <div class="container">
             <h2 class="section-title">ABOUT <span>ME</span></h2>
             <div class="about-container">
-
                 <!-- 3D Transparent Image -->
                 <div class="about-image">
                     <div class="panel-3d">
@@ -104,31 +109,26 @@
                     <h3>The Creative Process</h3>
                     <p>
                         With experience in frontend development, I specialize in creating responsive and interactive
-                        websites
-                        that provide excellent user experiences across all devices.
+                        websites that provide excellent user experiences across all devices.
                     </p>
                     <p>
                         My approach combines technical expertise with attention to detail, resulting in projects that
-                        are not only
-                        functional but visually appealing and accessible.
+                        are not only functional but visually appealing and accessible.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <div class="stat-number counter" data-target="10">0</div>
                             <div class="stat-label">Projects</div>
                         </div>
-
                         <div class="stat-item">
                             <div class="stat-number counter" data-target="1">0</div>
-                            <div class="stat-label">Years Project Experience</div>
+                            <div class="stat-label">Years Experience</div>
                         </div>
-
                         <div class="stat-item">
                             <div class="stat-number counter" data-target="100">0</div>
                             <div class="stat-label">Dedication</div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
                 <div class="work-card panel-3d">
                     <div class="work-image">
                         <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                            alt="Modern portfolio website design with dark theme and blue accents">
+                            alt="Modern portfolio website design">
                         <div class="work-overlay">
                             <a href="#" class="btn btn-primary">View Project</a>
                         </div>
@@ -163,7 +163,7 @@
                 <div class="work-card panel-3d">
                     <div class="work-image">
                         <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                            alt="E-commerce fashion website homepage with product grid">
+                            alt="E-commerce fashion website">
                         <div class="work-overlay">
                             <a href="#" class="btn btn-primary">View Project</a>
                         </div>
@@ -183,7 +183,7 @@
                 <div class="work-card panel-3d">
                     <div class="work-image">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                            alt="Database management interface with form inputs">
+                            alt="Database management interface">
                         <div class="work-overlay">
                             <a href="#" class="btn btn-primary">View Project</a>
                         </div>
@@ -221,12 +221,14 @@
                     </div>
                     <h3>CSS3</h3>
                 </div>
+
                 <div class="skill-item panel-3d">
                     <div class="skill-icon">
                         <i class="fab fa-js"></i>
                     </div>
                     <h3>JavaScript</h3>
                 </div>
+
                 <div class="skill-item panel-3d">
                     <div class="skill-icon">
                         <i class="fab fa-bootstrap"></i>
@@ -276,9 +278,9 @@
 
                 <div class="skill-item panel-3d">
                     <div class="skill-icon">
-                        <i class="fab fa-figma"></i>
+                        <i class="fas fa-database"></i>
                     </div>
-                    <h3>Sql</h3>
+                    <h3>SQL</h3>
                 </div>
 
                 <div class="skill-item panel-3d">
@@ -298,7 +300,7 @@
         </div>
     </section>
 
-    <!-- Education Section - Updated with proper padding and responsiveness -->
+    <!-- Education Section -->
     <section id="education">
         <div class="container">
             <h2 class="section-title">EDUCATION & <span>LANGUAGES</span></h2>
@@ -325,13 +327,11 @@
                                 <div class="education-title">Senior Secondary School (Arts Stream)</div>
                                 <div class="education-date">Completed: 2025</div>
                             </div>
-
                             <p class="education-desc">
                                 Completed Senior Secondary (12th) in the Arts stream, gaining knowledge in humanities,
                                 social sciences, and essential academic skills.
                             </p>
                         </div>
-
                     </div>
                 </div>
                 <!-- Languages Panel -->
@@ -390,24 +390,23 @@
                         </div>
                     </div>
                 </div>
-             <form class="contact-form panel-3d">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" class="form-control" required>
-    </div>
-    <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" class="form-control" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary" style="width: 100%;">
-        <i class="fas fa-paper-plane"></i> Send Message
-    </button>
-</form>
-
+                <form class="contact-form panel-3d">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -455,22 +454,21 @@
             <div class="social-links">
                 <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                 <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/yourusername/" class="social-link"><i
-                        class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/yourusername/" class="social-link"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
                 <a href="#" class="social-link"><i class="fab fa-github"></i></a>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 3D Portfolio. All rights reserved. <strong>Made By :- Jawinder Singh</strong></p>
+                <p>&copy; 2025 3D Portfolio. All rights reserved. <strong>Made By :- Raman Kumar</strong></p>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- JavaScript -->
-    <script src="../js/index.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="./js/index.js"></script>
 </body>
-
 </html>
