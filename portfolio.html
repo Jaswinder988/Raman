@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Modern Portfolio - Fixed Mobile Menu</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!-- Three.js Background -->
+    <div id="threejs-container"></div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon
+                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                    </polygon>
+                </svg>
+                <span>PORTFOLIO<span class="logo-gradient">3D</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>HI, I'M <span class="logo-gradient">Raman Kumar</span></h1>
+                    <h2>Full Stack DEVELOPER</h2>
+                    <p>Crafting immersive digital experiences with cutting-edge web technologies and modern design
+                        principles.</p>
+                    <div class="hero-buttons">
+                        <a href="mywork.html" class="btn btn-primary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                            View Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="gradient-border">
+                        <img src="../images//raman.HEIC" alt="Developer avatar with futuristic design elements">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT <span>ME</span></h2>
+            <div class="about-container">
+
+                <!-- 3D Transparent Image -->
+                <div class="about-image">
+                    <div class="panel-3d">
+                        <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="3D Developer Illustration">
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="about-content">
+                    <h3>The Creative Process</h3>
+                    <p>
+                        With experience in frontend development, I specialize in creating responsive and interactive
+                        websites
+                        that provide excellent user experiences across all devices.
+                    </p>
+                    <p>
+                        My approach combines technical expertise with attention to detail, resulting in projects that
+                        are not only
+                        functional but visually appealing and accessible.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="10">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="1">0</div>
+                            <div class="stat-label">Years Project Experience</div>
+                        </div>
+
+                        <div class="stat-item">
+                            <div class="stat-number counter" data-target="100">0</div>
+                            <div class="stat-label">Dedication</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work">
+        <div class="container">
+            <h2 class="section-title">MY <span>WORK</span></h2>
+            <div class="work-grid">
+                <!-- Project 1 -->
+                <div class="work-card panel-3d">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="Modern portfolio website design with dark theme and blue accents">
+                        <div class="work-overlay">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>Portfolio Website</h3>
+                        <p>Personal Portfolio</p>
+                        <div class="work-tags">
+                            <span class="work-tag">HTML/CSS</span>
+                            <span class="work-tag">JavaScript</span>
+                            <span class="work-tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="work-card panel-3d">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="E-commerce fashion website homepage with product grid">
+                        <div class="work-overlay">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>Fashion Flow</h3>
+                        <p>E-commerce Homepage</p>
+                        <div class="work-tags">
+                            <span class="work-tag">Tailwind CSS</span>
+                            <span class="work-tag">Bootstrap</span>
+                            <span class="work-tag">UI Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="work-card panel-3d">
+                    <div class="work-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="Database management interface with form inputs">
+                        <div class="work-overlay">
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>Student Records</h3>
+                        <p>CRUD Application</p>
+                        <div class="work-tags">
+                            <span class="work-tag">PHP</span>
+                            <span class="work-tag">MySQL</span>
+                            <span class="work-tag">Database</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">MY <span>SKILLS</span></h2>
+            <div class="skills-container">
+                <!-- Row 1 -->
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                    <h3>Bootstrap</h3>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/1024px-Tailwind_CSS_Logo.svg.png"
+                            alt="Tailwind CSS logo" style="width: 48px; height: 48px;">
+                    </div>
+                    <h3>Tailwind CSS</h3>
+                </div>
+
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3>Core PHP</h3>
+                </div>
+
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MySQL</h3>
+                </div>
+
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-laravel"></i>
+                    </div>
+                    <h3>Laravel</h3>
+                </div>
+            </div>
+
+            <!-- Second Row of Skills -->
+            <div class="skills-container" style="margin-top: 25px;">
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                </div>
+
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <h3>Sql</h3>
+                </div>
+
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git</h3>
+                </div>
+
+                <div class="skill-item panel-3d">
+                    <div class="skill-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Database Management</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section - Updated with proper padding and responsiveness -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">EDUCATION & <span>LANGUAGES</span></h2>
+            <div class="about-container">
+                <!-- Education Panel -->
+                <div class="education-container">
+                    <div class="panel-3d" style="padding: 30px;">
+                        <h3 style="margin-bottom: 20px; color: var(--accent);">Education</h3>
+                        <!-- Item 1 -->
+                        <div class="education-item">
+                            <div class="education-header">
+                                <div class="education-title">Web Designer Training</div>
+                                <div class="education-date">Completed: April 2024</div>
+                            </div>
+                            <div class="education-institution">Chisty Computer Center, Jalalabad</div>
+                            <p class="education-desc">
+                                Comprehensive training in modern web design principles, UI/UX fundamentals,
+                                and responsive design techniques.
+                            </p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="education-item">
+                            <div class="education-header">
+                                <div class="education-title">Senior Secondary School (Arts Stream)</div>
+                                <div class="education-date">Completed: 2025</div>
+                            </div>
+
+                            <p class="education-desc">
+                                Completed Senior Secondary (12th) in the Arts stream, gaining knowledge in humanities,
+                                social sciences, and essential academic skills.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Languages Panel -->
+                <div class="language-container">
+                    <div class="panel-3d" style="padding: 30px;">
+                        <h3 style="margin-bottom: 20px; color: var(--accent);">Languages</h3>
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">Intermediate</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Punjabi</span>
+                            <span class="language-level">Native</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Hindi</span>
+                            <span class="language-level">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">CONTACT <span>ME</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>rk1183779@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+(91) 9463363958</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Jalalabad, India</p>
+                        </div>
+                    </div>
+                </div>
+             <form class="contact-form panel-3d">
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" class="form-control" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" style="width: 100%;">
+        <i class="fas fa-paper-plane"></i> Send Message
+    </button>
+</form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-cubes">
+            <!-- Cubes will be added dynamically with JavaScript -->
+        </div>
+
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Frontend Development</li>
+                        <li>Responsive Design</li>
+                        <li>UI/UX Designer</li>
+                        <li>Web Performance</li>
+                        <li>Cross-Browser Compatibility</li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>Jalalabad, India</li>
+                        <li>rk1183779@gmail.com</li>
+                        <li>+91 9463363958</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/yourusername/" class="social-link"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 3D Portfolio. All rights reserved. <strong>Made By :- Jawinder Singh</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
